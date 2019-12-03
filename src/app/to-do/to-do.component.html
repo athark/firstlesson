@@ -1,0 +1,25 @@
+<nb-layout-header class="header">
+    <h5>Things are to do today </h5>
+</nb-layout-header>
+<div *ngIf="todos">
+    <table class="table">
+        <thead style="background-color:rgb(103, 126, 112)">
+            <tr>
+                <th scope="col">User Id</th>
+                <th scope="col">ID</th>
+                <th scope="col">Title</th>
+                <th scope="col">Task Completed</th>
+
+            </tr>
+        </thead>
+        <tbody *ngFor="let td of todos">
+            <tr *ngIf="td.id <= 10 ">
+                <th scope="row">{{td.userId}}</th>
+                <td>{{td.id}}</td>
+                <td>{{td.title}}</td>
+                <td>{{td.completed}}</td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>
