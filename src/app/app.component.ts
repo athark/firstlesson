@@ -35,6 +35,13 @@ export class AppComponent {
       link: "/todo",
       home: false,
       children: undefined
+    },
+    {
+      title: "Comments",
+      icon: "message-circle-outline",
+      link: "/comments",
+      home: false,
+      children: undefined
     }
   ];
   constructor(private sidebarService: NbSidebarService) {}
