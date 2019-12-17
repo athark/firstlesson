@@ -1,0 +1,41 @@
+<nb-layout-header class="header">
+    <h5> League Schedule</h5>
+</nb-layout-header>
+<div class="image">
+    <img width='15%' src=" ../assets/Cricket.jpg" alt="cricket">
+
+
+
+    <h2 *ngFor=" let ls of leagueSchedule">
+        <h2>{{ls.matchType }} {{ls.league}} {{ls.level}} </h2>
+    </h2>
+    <button type="button" (click)="getData()"> click to see the name
+
+    </button>
+    {{name}}
+
+    <table class="table">
+        <thead style="background-color:rgb(103, 126, 112)">
+
+            <tr>
+                <th scope="col">Home Team</th>
+                <th scope="col">Guest Team</th>
+                <th scope="col">Date</th>
+                <th scope="col">Match #</th>
+                <th scope="col">Ground</th>
+                <th scope="col">Umpire</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor=" let ls of leagueSchedule">
+                <th> {{ls.homeTeam}} </th>
+                <td> {{ls.guestTeam}}</td>
+                <td>{{ ls.date}} </td>
+                <td>{{ls.matchNumber}} </td>
+                <td>{{ls.ground}} </td>
+                <td>{{ls.umpire}} </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

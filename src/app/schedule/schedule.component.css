@@ -1,0 +1,15 @@
+.types {
+  text-align: center;
+  color: blue;
+}
+
+
+.image {
+    text-align: center;
+    background-color: rgb(143, 172, 226);
+}
+.header {
+    background-color: rgb(44, 109, 44);
+    font: bold;
+    color: floralwhite;
+}

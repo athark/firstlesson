@@ -42,7 +42,14 @@ export class AppComponent {
       link: "/comments",
       home: false,
       children: undefined
-    }
+    },
+    {
+      title: "Schedule",
+      icon: "clock-outline",
+      link: "/schedule",
+      home: true,
+      children: undefined
+    },
   ];
   constructor(private sidebarService: NbSidebarService) {}
 
